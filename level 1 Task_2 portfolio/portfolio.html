@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="portfolio.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="header">
+    <h1>Portfolio</h1>
+    <p>Welcome to My Portfolio</p>
+
+    <div class="menu">
+        <button onclick="showSection('home')">Home</button>
+        <button onclick="showSection('about')">About Me</button>
+        <button onclick="showSection('skills')">My Skills</button>
+        <button onclick="showSection('education')">Education</button>
+        <button onclick="showSection('certificates')">Certificates</button>
+        <button onclick="showSection('contact')">Contact</button>
+    </div>
+</header>
+
+<!-- SECTIONS -->
+<main>
+
+<!-- HOME -->
+<section id="home" class="section">
+    <h2>Portfolio</h2><br>
+    <p>
+        I am a passionate and creative student who loves web development
+        and designing.</p> <p>I enjoy building beautiful and functional websites
+        using modern technologies.
+    </p>
+    <img src="portfolio.jpg"
+         alt="Portfolio Image">
+</section>
+
+<!-- ABOUT ME -->
+<section id="about" class="section">
+    <h2>Mansi</h2>
+    <img src="IMG_20231110_190217.jpg"
+         alt="My Image"><br><br>
+    <p><b>Name:</b> Mansi Pipaliya </p>
+    <p><b>Education:</b> IMSC.IT </p><br>
+    <p>
+        I am a hardworking and dedicated student with strong interest
+        in web development and UI designing.</p><p>I always try to improve
+        my skills and learn new technologies.
+    </p>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="section">
+    <h2>My Skills</h2>
+
+    <div class="box-container">
+        <div class="box" onclick="showSkillImage('html')">HTML</div>
+        <div class="box" onclick="showSkillImage('css')">CSS</div>
+        <div class="box" onclick="showSkillImage('design')">Designing</div>
+    </div>
+
+    <img id="skillImage" class="hidden"
+         src="" alt="Skill Image">
+</section>
+
+<!-- EDUCATION -->
+<section id="education" class="section">
+    <h2>Education</h2><br>
+    <h3>IMSc.IT</h3><br>
+    <img src="ssasit.jpg"
+         alt="ssasit.jpg"><br><br>
+    <p>
+        I am currently pursuing IMSc IT from SSASIT College.</p><p>
+        This course helps me build strong technical and analytical skills
+        in the field of Information Technology.
+    </p>
+</section>
+
+<!-- CERTIFICATES -->
+<section id="certificates" class="section">
+    <h2>Certificates</h2>
+
+    <div class="box-container">
+        <div class="box" onclick="showCertificate('c')">C Bettel Certificate</div>
+        <div class="box" onclick="showCertificate('bis')">
+            Bureau of Indian Standards (BIS)
+        </div>
+        <div class="box" onclick="showCertificate('ai')">
+            Master Class with AI
+        </div>
+    </div>
+
+    <img id="certificateImage" class="hidden"
+         src="" alt="Certificate Image">
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section">
+    <h2>Contact Me</h2>
+
+    <form>
+        <input type="text" placeholder="My Name">
+        <input type="email" placeholder="My Email">
+        <textarea placeholder="My Message"></textarea>
+        <button type="button" onclick="goHome()">Send</button>
+    </form>
+</section>
+
+</main>
+
+<script src="portfolio.js"></script>
+</body>
+</html>
