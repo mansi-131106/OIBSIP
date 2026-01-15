@@ -1,0 +1,152 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+/* NAVBAR */
+.navbar{
+    position:fixed;
+    top:0;
+    width:100%;
+    background:#0b1c3d;
+    padding:20px 80px;
+    display:flex;
+    justify-content:space-between;
+    z-index:1000;
+}
+.navbar ul{
+    display:flex;
+    list-style:none;
+}
+.navbar ul li{
+    margin-left:30px;
+}
+.navbar a{
+    color:white;
+    text-decoration:none;
+    font-size:18px;
+}
+.logo{
+    color:#00d9ff;
+    font-size:26px;
+}
+
+/* SECTIONS */
+.section{
+    padding:140px 100px;
+    text-align:center;
+}
+.section img{
+    width:65%;
+    max-width:650px;
+    border-radius:15px;
+    margin-bottom:40px;
+}
+.section h2{
+    font-size:44px;
+    margin-bottom:30px;
+}
+.section p{
+    font-size:20px;
+    line-height:1.8;
+}
+
+/* HOME */
+.home{
+    background:linear-gradient(to right,#0b1c3d,#123d7a);
+    color:white;
+}
+.highlight{
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    margin:30px 0;
+    font-size:18px;
+}
+
+/* HOME EXTRA */
+.home-extra{
+    background:#f4f6fb;
+}
+.points{
+    list-style:none;
+    font-size:20px;
+}
+.points li{
+    margin:15px 0;
+}
+
+/* ABOUT */
+.about{
+    background:white;
+}
+.about-box{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    margin-top:40px;
+}
+.about-box div{
+    background:#eef3ff;
+    padding:25px;
+    border-radius:15px;
+    width:280px;
+}
+
+/* SERVICES */
+.services{
+    background:#0b1c3d;
+    color:white;
+}
+.service-box{
+    display:flex;
+    gap:30px;
+    justify-content:center;
+    margin-top:40px;
+}
+.card{
+    background:white;
+    color:black;
+    padding:25px;
+    width:300px;
+    border-radius:15px;
+}
+.card img{
+    width:100%;
+    border-radius:10px;
+}
+.card ul{
+    margin-top:15px;
+}
+
+/* CONTACT */
+.contact{
+    background:#f4f6fb;
+}
+.contact input,
+.contact textarea{
+    width:60%;
+    padding:15px;
+    margin:10px 0;
+}
+.contact button{
+    padding:15px 40px;
+    font-size:18px;
+    background:#0b1c3d;
+    color:white;
+    border:none;
+}
+
+/* FOOTER */
+footer{
+    background:black;
+    color:white;
+    text-align:center;
+    padding:25px;
+}
